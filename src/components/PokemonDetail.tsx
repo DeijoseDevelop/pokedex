@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, Ruler, Weight, Swords, Shield, Zap } from 'lucide-react';
 import { Pokemon } from '../types/pokemon';
-import { typeGradients } from '../utils/pokemonColors';
+import { typeColors, typeGradients } from '../utils/pokemonColors';
 
 export const PokemonDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();
